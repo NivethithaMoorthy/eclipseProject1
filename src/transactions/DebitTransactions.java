@@ -1,8 +1,6 @@
 package transactions;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +17,7 @@ public class DebitTransactions
         WebDriver cd = new ChromeDriver(); //opens new chrome window
         cd.manage().window().maximize();   //maximizes the window size
 		cd.get("https://www.amazon.in/");
+		System.out.println("Website opened");
 		cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Actions a = new Actions(cd);
 	
