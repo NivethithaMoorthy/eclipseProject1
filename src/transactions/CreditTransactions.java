@@ -39,8 +39,11 @@ public class CreditTransactions
 		captureScreenShot(cd);
 		System.out.println("screenshot captured");
 		cd.findElement(By.name("field-keywords")).sendKeys("smartwatch");
+		System.out.println("smartwatch entered in search field");
 		captureScreenShot(cd);
 		cd.findElement(By.id("nav-search-submit-button")).click();
+		System.out.println("search icon is clicked");
+		captureScreenShot(cd);
 		Thread.sleep(2000);
 		captureScreenShot(cd);
 		Thread.sleep(2000);
