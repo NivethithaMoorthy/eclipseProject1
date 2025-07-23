@@ -16,6 +16,7 @@ public class DebitTransactions
 		System.setProperty("webdriver.chrome.driver","E:\\Batch30Automation\\BankingApplication\\Chromedriver\\chromedriver.exe");
         WebDriver cd = new ChromeDriver(); //opens new chrome window
         cd.manage().window().maximize();   //maximizes the window size
+        System.out.println("Window maximised");
 		cd.get("https://www.amazon.in/");
 		System.out.println("Website opened");
 		cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
