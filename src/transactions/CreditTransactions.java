@@ -35,10 +35,9 @@ public class CreditTransactions
         cd.manage().window().maximize();   //maximizes the window size
 		cd.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		System.out.println("Opening website");
-		
 		cd.get("https://www.amazon.in/");
 		captureScreenShot(cd);
-		
+		System.out.println("screenshot captured");
 		cd.findElement(By.name("field-keywords")).sendKeys("smartwatch");
 		captureScreenShot(cd);
 		
