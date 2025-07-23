@@ -40,11 +40,9 @@ public class CreditTransactions
 		System.out.println("screenshot captured");
 		cd.findElement(By.name("field-keywords")).sendKeys("smartwatch");
 		captureScreenShot(cd);
-		
 		cd.findElement(By.id("nav-search-submit-button")).click();
 		Thread.sleep(2000);
 		captureScreenShot(cd);
-		
 		Thread.sleep(2000);
 		JavascriptExecutor js = (JavascriptExecutor)cd;
 		
